@@ -2,15 +2,15 @@ import { MIN_TITLE_LENGTH } from '../constants.js';
 import AbstractComponent from './abstract-component.js';
 
 export default class FormComponent extends AbstractComponent {
-    constructor(taskService, label) {
-        super();
-        this._taskService = taskService;
-        this._label = label;
-    }
+  constructor(taskService, label) {
+    super();
+    this._taskService = taskService;
+    this._label = label;
+  }
 
-    _getTemplate() {
-        return (
-            `<form aria-label="Форма добавления задачи" class="add-task__form">
+  _getTemplate() {
+    return (
+      `<form aria-label="Форма добавления задачи" class="add-task__form">
         <div class="add-task__input-wrapper">
           <label for="add-task">${this._label}</label>
           <input id="add-task" name="task-name" placeholder="Название задачи..." type="text" required minlength="${MIN_TITLE_LENGTH}">
@@ -23,6 +23,24 @@ export default class FormComponent extends AbstractComponent {
           <span>Добавить</span>
         </button>
       </form>`
-        );
-    }
+    );
+  }
+
+  _afterCreateElement() {
+    this._addEventListeners();
+  }
+
+  _addEventListeners() {
+    this.getElement().addEventListener(`submit`, this.formSubmitHandler.bind(this));
+  }
+
+  formSubmitHandler(evt) {
+    evt.preventDefault();
+
+    const inputElement = this.getElement().querySelector(`#add-task`);
+    const title = inputElement.value.trim();
+
+    this._taskService.create({ title });
+    inputElement.value = ``;
+  }
 }
