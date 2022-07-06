@@ -5,7 +5,7 @@
 
 * **Lighthouse**:
 
-![image](https://user-images.githubusercontent.com/43762313/177585247-c7d73150-1733-42fe-8485-29b9479f3ad4.png)
+![image](https://user-images.githubusercontent.com/43762313/177585472-81eb2705-0b63-4da5-bc23-3ef748e37768.png)
 
 ## Introduction
 
