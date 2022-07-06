@@ -25,15 +25,15 @@ export const Key = {
 };
 export const STATE_EMPTY = `empty`;
 export const Text = {
-    EMPTY_TASK: `Перетащите карточку`,
-    EMPTY_BASKET: `Корзина пуста`,
-    NEW_TASK: `Новая задача`,
+    EMPTY_TASK: `Drag you card`,
+    EMPTY_BASKET: `Empty basket`,
+    NEW_TASK: `New task`,
 };
 export const MIN_TITLE_LENGTH = 2;
 export const StatusLabel = {
-    [Status.BACKLOG]: `Бэклог`,
-    [Status.PROCESSING]: `В процессе`,
-    [Status.DONE]: `Готово`,
-    [Status.BASKET]: `Корзина`,
+    [Status.BACKLOG]: `Backlog`,
+    [Status.PROCESSING]: `In process`,
+    [Status.DONE]: `Done`,
+    [Status.BASKET]: `Basket`,
 };
 export const HIDE_BLOCK_CLASS = `hidden-block`;

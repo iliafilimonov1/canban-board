@@ -12,7 +12,7 @@ export default class BoardComponent extends AbstractComponent {
     _getTemplate() {
         return (
             `<section class="taskboard">
-        <h2 class="visually-hidden">Ваши задачи:</h2>
+        <h2 class="visually-hidden">Your tasks:</h2>
       </section>`
         );
     }

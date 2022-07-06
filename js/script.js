@@ -1,4 +1,4 @@
 import App from './app.js';
 
 const app = new App();
-app.init(`Канбан-доска`);
+app.init(`Kanban board`);

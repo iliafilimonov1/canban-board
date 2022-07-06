@@ -10,17 +10,17 @@ export default class FormComponent extends AbstractComponent {
 
   _getTemplate() {
     return (
-      `<form aria-label="Форма добавления задачи" class="add-task__form">
+      `<form aria-label="Add tasks form" class="add-task__form">
         <div class="add-task__input-wrapper">
           <label for="add-task">${this._label}</label>
-          <input id="add-task" name="task-name" placeholder="Название задачи..." type="text" required minlength="${MIN_TITLE_LENGTH}">
+          <input id="add-task" name="task-name" placeholder="Task name..." type="text" required minlength="${MIN_TITLE_LENGTH}">
         </div>
         <button class="add-task__button button" type="submit">
           <svg fill="none" height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg">
             <rect fill="white" height="14.6667" width="1.83333" x="10.0833" y="3.66663"/>
             <rect fill="white" height="14.6667" transform="rotate(90 18.3333 10.0833)" width="1.83333" x="18.3333" y="10.0833"/>
           </svg>
-          <span>Добавить</span>
+          <span>Add task</span>
         </button>
       </form>`
     );
