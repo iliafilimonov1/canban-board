@@ -1,47 +1,47 @@
 export const tasks = [
     {
         'id': `1`,
-        'title': `Выучить JS`,
+        'title': `Prepare image`,
         'status': `backlog`,
     },
     {
         'id': `2`,
-        'title': `Выучить React`,
+        'title': `1:1 Nancy`,
         'status': `backlog`,
     },
     {
         'id': `3`,
-        'title': `Позвонить маме`,
+        'title': `Send out report`,
         'status': `done`,
     },
     {
         'id': `4`,
-        'title': `Выпить смузи`,
+        'title': `Analytics`,
         'status': `processing`,
     },
     {
         'id': `5`,
-        'title': `Сходить погулять`,
+        'title': `Branding guidelines`,
         'status': `basket`,
     },
     {
         'id': `6`,
-        'title': `Перестать тупить`,
+        'title': `Mobile UI`,
         'status': `processing`,
     },
     {
         'id': `7`,
-        'title': `Сделать домашку`,
+        'title': `Data Analytics podcast`,
         'status': `backlog`,
     },
     {
         'id': `8`,
-        'title': `Прочитать Войну и Мир`,
+        'title': `LA Suntimes`,
         'status': `basket`,
     },
     {
         'id': `9`,
-        'title': `Погладить Кекса`,
+        'title': `Prepare presentation`,
         'status': `done`,
     },
 ];
