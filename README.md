@@ -5,6 +5,8 @@
 
 * **Lighthouse**:
 
+![image](https://user-images.githubusercontent.com/43762313/177585141-1b6491c5-6a38-4c8c-bae6-a02f5dcb3aad.png)
+
 ## Introduction
 
 **Canban board** - is a single-page application that runs in a browser. The application allows you to add task cards, move tasks between columns and delete completed tasks.
