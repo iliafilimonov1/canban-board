@@ -83,7 +83,7 @@
 .task--active .task__edit,
 .task--active:hover .task__edit {
   opacity: 1;
-  background-image: url("../../../img/edit-active.svg");
+  background-image: url("../../img/edit-active.svg");
 }
 
 .task--dragged {
@@ -125,7 +125,7 @@
   background-color: transparent;
   cursor: pointer;
   transition: var(--animation);
-  background-image: url("../../../img/edit.svg");
+  background-image: url("../../img/edit.svg");
   opacity: 0;
 }
 
