@@ -41,5 +41,31 @@ export default class TasksService {
         this._emitEvent(StateActions.BASKET_CLEANUP);
     }
 
-    
+    getByStatus(status) {
+        return this._tasks.filter((task) => task.status === status);
+    }
+
+    elementDragover() {
+        this._emitEvent(StateActions.ELEMENT_DRAGOVER);
+    }
+
+    startTaskEditing(task = {}) {
+        this._emitEvent(StateActions.ELEMENT_EDITED, task);
+    }
+
+    setDraggedElement(taskElement) {
+        this._draggedElement = taskElement;
+    }
+
+    getDraggedElement() {
+        return this._draggedElement;
+    }
+
+    _emitEvent(type, detail) {
+        window.dispatchEvent(new CustomEvent(type, { detail }));
+    }
+
+    _getTaskIndexByID(id) {
+        return this._tasks.findIndex((el) => el.id === id);
+    }
 }
