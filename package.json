@@ -1,0 +1,25 @@
+{
+  "name": "canban-board",
+  "version": "1.0.0",
+  "description": "single-page application",
+  "default": "index.html",
+  "scripts": {
+    "serve": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyafilimonov/canban-board.git"
+  },
+  "keywords": [],
+  "author": "Ilia Filimonov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyafilimonov/canban-board/issues"
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "homepage": "https://github.com/ilyafilimonov/canban-board#readme"
+}
